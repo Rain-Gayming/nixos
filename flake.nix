@@ -16,14 +16,12 @@
             pkgs = nixpkgs.legacyPackages.${system};
         in
             {
-            homeConfigurations."rain" = inputs.home-manager.lib.homeManagerConfiguration {
-                modules = [ inputs.stylix.homeManagerModules.stylix ./home.nix];
-            };
             nixosConfigurations.default = nixpkgs.lib.nixosSystem {
                 specialArgs = {inherit inputs;};
                 modules = [
                     ./configuration.nix
                     inputs.home-manager.nixosModules.default 
+                    inputs.stylix.nixosModules.stylix ./configuration.nix
                 ];
             };
         };

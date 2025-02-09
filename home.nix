@@ -8,12 +8,7 @@
         #        ./modules/home-manager/stylix.nix
     ];
     
-    stylix = {
-        enable = true;
-        autoEnable = true;
-        base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-medium.yaml";
-    };
-    
+   
     home.username = "rain";
     home.homeDirectory = "/home/rain";
 

@@ -1,2 +1,1 @@
 require("rain")
-require("configs")

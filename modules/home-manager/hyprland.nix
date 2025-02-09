@@ -67,6 +67,7 @@
 
 
        bind = $mainMod, F11, fullscreen
+        bind = $mainMod SHIFT, S, exec,      hyprshot -m region
 
        ## opens ##
        bind = $mainMod, D, exec, rofi -show run
