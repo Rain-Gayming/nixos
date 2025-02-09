@@ -11,6 +11,9 @@
    
     home.username = "rain";
     home.homeDirectory = "/home/rain";
+    
+    programs.kitty.enable = true;
+    stylix.targets.kitty.enable = true;
 
     wayland.windowManager.hyprland.enable = true;
 

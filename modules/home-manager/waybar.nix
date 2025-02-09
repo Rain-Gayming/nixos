@@ -48,7 +48,7 @@
             critical = 15;
         };
         format = "{capacity}% {icon}";
-        format-charging = "{capacity}% ";
+        format-charging = "{capacity}% {icon} ";
         format-plugged = "{capacity}% ";
         format-alt = "{time} {icon}";
         format-icons = ["" "" "" "" ""];
@@ -124,7 +124,8 @@ window#waybar.hidden {
     padding-right: 10px;
     border-radius: 10px;
     transition: none;
-    color: #ffffff;
+    color: #282828;
+
     border-style: solid;
     background-color: #8ec07c;
 }
@@ -135,13 +136,13 @@ window#waybar.hidden {
     padding-right: 16px;
     border-radius: 10px;
     transition: none;
-    color: #ffffff;
+    color: #282828;
     background-color: #8ec07c;
 }
 
 #pulseaudio.muted {
     background-color: #fb4934;
-    color: #ffffff;
+    color: #282828;
 }
 
 #memory {
@@ -150,7 +151,7 @@ window#waybar.hidden {
     padding-right: 16px;
     border-radius: 10px;
     transition: none;
-    color: #ffffff;
+    color: #282828;
     background-color: #8ec07c;
 }
 
@@ -160,7 +161,7 @@ window#waybar.hidden {
     padding-right: 16px;
     border-radius: 10px;
     transition: none;
-    color: #ffffff;
+    color: #282828;
     background-color: #8ec07c;
 }
 
@@ -185,12 +186,12 @@ window#waybar.hidden {
     padding-right: 16px;
     border-radius: 10px;
     transition: none;
-    color: #ffffff;
+    color: #282828;
     background-color: #8ec07c;
 }
 
 #battery.charging {
-    color: #ffffff;
+    color: #282828;
 }
 
 #battery.warning:not(.charging) {
@@ -198,8 +199,8 @@ window#waybar.hidden {
 }
 
 #battery.critical:not(.charging) {
-    color: #ffffff;
     animation-name: blink;
+    color: #282828;
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -211,7 +212,7 @@ window#waybar.hidden {
     padding-right: 16px;
     border-radius: 10px;
     transition: none;
-    color: #ffffff;
+    color: #282828;
 }
 
 @keyframes blink {
