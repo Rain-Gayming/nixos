@@ -113,14 +113,27 @@
         # text editor 
         neovim
         hyfetch
+       
         # coding
         git
+        
+        # languages
         cargo
         zig
         gcc
         go
         lua
         nodejs
+
+
+        # vulkan
+        vulkan-tools
+        glslang    
+        vulkan-headers
+        vulkan-loader
+        vulkan-validation-layers
+
+
 
         # file manager
         yazi
