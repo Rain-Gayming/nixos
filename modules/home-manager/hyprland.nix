@@ -11,8 +11,6 @@
 
        exec-once = waybar
        exec-once = dunst
-       exec-once = hyprctl setcursor Bibata-Modern_Classic 24
-
 
        ### DISPLAY ###
        monitor=DP-1,1920x1080@60,auto,1

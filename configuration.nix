@@ -15,7 +15,10 @@
     stylix.enable = true;
     stylix.autoEnable = false;
     stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
-    stylix.image = ./wallpaper.png; 
+    stylix.image = ./wallpaper.png;
+    stylix.opacity.terminal = 0.8;
+
+
     #drive support 
     hardware.opentabletdriver.enable = true;
     # unfree apps
@@ -51,6 +54,7 @@
         fira-code
         fira-code-symbols
         nerd-fonts.fira-code
+        monocraft
         font-awesome
     ];
 
@@ -150,6 +154,9 @@
         wget
         gnutar
         gzip
+        xsettingsd 
+        
+        phinger-cursors
     ];
 
     # Some programs need SUID wrappers, can be configured further or are
