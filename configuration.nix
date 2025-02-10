@@ -1,4 +1,4 @@
-# Edit this configuration file to define what should be installed on
+
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
@@ -18,13 +18,16 @@
     stylix.image = ./wallpaper.png;
     stylix.opacity.terminal = 0.8;
 
-
+    programs.steam.enable = true;
+    #    hardware.alsa.enable = true;
     #drive support 
     hardware.opentabletdriver.enable = true;
     # unfree apps
     nixpkgs.config.allowUnfree = true;
     # zsh
     programs.zsh.enable = true;
+
+    programs.thunar.enable = true;
 
     # Bootloader.
     boot.loader.systemd-boot.enable = true;
@@ -113,7 +116,8 @@
         # text editor 
         neovim
         hyfetch
-       
+        unityhub
+        vscode
         # coding
         git
         
@@ -124,8 +128,8 @@
         go
         lua
         nodejs
-
-
+        alsa-lib
+        
         # vulkan
         vulkan-tools
         glslang    
@@ -133,10 +137,12 @@
         vulkan-loader
         vulkan-validation-layers
 
-
+        dotnetCorePackages.dotnet_8.sdk
+        gettext
 
         # file manager
         yazi
+        ark
         ### GUI ###
 
         # bar
@@ -151,12 +157,14 @@
 
         # messaging
         vesktop
-
+        lutris
+        
         # art 
         gimp
         blockbench
 
         ### MISC ###
+        steam
         hyprshot
         rofi-wayland
         unzip
@@ -168,9 +176,12 @@
         gnutar
         gzip
         xsettingsd 
-        
+        wine        
         phinger-cursors
-    ];
+
+        # libaries
+        pkg-config 
+   ];
 
     # Some programs need SUID wrappers, can be configured further or are
     # started in user sessions.

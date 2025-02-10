@@ -5,6 +5,8 @@
         ./modules/home-manager/hyprland.nix
         ./modules/home-manager/waybar.nix
         ./modules/home-manager/kitty.nix
+        #        ./modules/home-manager/vesktop.nix
+        #./modules/home-manager/firefox.nix
         #        ./modules/home-manager/stylix.nix
     ];
     
@@ -34,6 +36,7 @@
 
         viAlias = true;
         vimAlias = true; 
+        
 
         extraLuaConfig = ''
           ${builtins.readFile ./nvim/init.lua}

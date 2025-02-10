@@ -13,7 +13,9 @@
        exec-once = dunst
 
        ### DISPLAY ###
-       monitor=DP-1,1920x1080@60,auto,1
+       monitor=DP-1,     1920x1080@60,      auto,     1
+       monitor=HDMI-A-1, 1920x1080@75,      0x0,      1
+       monitor=DP-2,     1920x1080@75,      1920x0,   1
 
        ### GRAPHICS ###
 
@@ -60,9 +62,11 @@
 
        input {
          kb_layout = gb
-     follow_mouse = 1
+         follow_mouse = 1
+         accel_profile = flat
+    
        }
-
+       
 
        bind = $mainMod, F11, fullscreen
         bind = $mainMod SHIFT, S, exec,      hyprshot -m region
